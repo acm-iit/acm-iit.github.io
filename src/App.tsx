@@ -1,22 +1,34 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+type LinkProps = {
+  text: string,
+  url: string
+};
+
+const Link = ({text, url}: LinkProps) => (
+  <a
+    className="App-link"
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {text}
+  </a>
+);
 
 const App = () => (
   <div className="App">
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
-        Edit <code>src/App.tsx</code> and save to reload.
+        Association for Computing Machinery @ Illinois Tech
       </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+      <Link text="Discord" url="https://discord.gg/SJS8468yHc" />
+      <Link text="Instagram" url="https://www.instagram.com/acm_iit/" />
+      <Link text="LinkedIn" url="https://www.linkedin.com/in/acm-iit/" />
+      <Link text="Twitter" url="https://twitter.com/acm_iit" />
+      <Link text="Mailing List" url="https://forms.gle/xnmfoQgqbz4gZReTA" />
     </header>
   </div>
 );
