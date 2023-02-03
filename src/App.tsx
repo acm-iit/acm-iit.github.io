@@ -22,7 +22,7 @@ const App = () => (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
-        Association for Computing Machinery @ Illinois Tech
+        Association for Computing Machinery @ Illinois Institute of Technology
       </p>
       <Link text="Discord" url="https://discord.gg/SJS8468yHc" />
       <Link text="Instagram" url="https://www.instagram.com/acm_iit/" />
